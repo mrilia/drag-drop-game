@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Detect & Drag Game</title>
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body id="body" class="dropable-box">
+    <div id="chineseBox" class="dropable-box hover-opacity text-fit corner-top-left thick-border border-red">
+        <p class="text-red">Chinese</p>
+    </div>
+    <div id="japaneseBox" class="dropable-box hover-opacity text-fit corner-top-right thick-border border-blue">
+        <p class="text-blue">Japanese</p>
+    </div>
+    <div id="koreanBox" class="dropable-box hover-opacity text-fit corner-bottom-left thick-border border-green">
+        <p class="text-green">Korean</p>
+    </div>
+    <div id="thaiBbox" class="dropable-box hover-opacity text-fit corner-bottom-right thick-border border-yellow">
+        <p class="text-yellow">Thai</p>
+    </div>
+
+    <div id="scoreSection" class="text-fit border-purple bg-purple text-purple center-bottom">
+        <span class="text-purple scoreSpan">
+            Score:&nbsp;
+        </span>
+    </div>
+    <img id="photo" class="photo-box thick-border hover-opacity draggable-box" src="img/default.jpg" />
+
+    <div class="overlay">
+        <div class="border-brown text-brown bg-yellow result-box">
+            <p>
+                Your score is: <span class="scoreSpan"></span>
+            </p>
+            <span id="tryAgain" class="hover-opacity click-pointer text-purple">Play</span>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>
